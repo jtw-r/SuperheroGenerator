@@ -168,7 +168,7 @@
   }
 
   function __init__() {
-    let request_people = getDataFromFile("Data/People.json");
+    let request_people = getDataFromFile("People.json");
     request_people.onload = function () {
       People = request_people.response;
       for (let people_id = 0; people_id < People.length; people_id++) {
@@ -176,7 +176,7 @@
       }
     };
 
-    let request_superpowers = getDataFromFile("Data/Superpowers.json");
+    let request_superpowers = getDataFromFile("Superpowers.json");
     request_superpowers.onload = function () {
       Superpowers = request_superpowers.response;
       for (let superpower_id = 0; superpower_id < Superpowers.length; superpower_id++) {
