@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/crystalcss/build/css/crystal.css" samesite="none">
+  <link rel="stylesheet" href="extra-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Superhero Generator</title>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h3>Superhero Generator | Developed by <a href="https://github.com/thejonathanr">Jonathan Reiterman</a> | <span id="version">VERSION</span></h3>
+  </div>
+  <div class="content">
+    <div class="vertical-container w-Third">
+      <div class="pad">
+        <h3 class="centre">Control Panel</h3>
+        <div>
+          <div class="w-50 space">
+            <button class="button green centre" type="button" onclick="generate();">New Superhero</button>
+          </div>
+          <div class="w-50 space">
+            <button class=" button red centre" type="button" onclick="reset();">Clear History</button>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        <div class="wrap-collapsible centre extra-space">
+          <div class="toggle-label" id="collapse-input">
+            <label class="toggle-label">Options</label>
+          </div>
+          <div class="collapse-content" hidden>
+            <div class="content-inner extra-space">
+              <form action="" class="form-options" id="options-form">
+                <label><input id="options-allow-duplicates" type="checkbox" onclick="checkbox_duplicates();">Allow Duplicates</label><br>
+                <br>
+                <label>Superhero Choices:</label><br>
+                <label><input type="checkbox" id="choices-individuals" value="option 1" checked>Individuals</label><br>
+                <label><input type="checkbox" id="choices-groups" value="option 2" checked>Groups</label><br>
+                <label><input type="checkbox" id="choices-entities" value="option 3" checked>Entities</label><br>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="warning-element-1" class="warning-element centre">
+          <h4>Looks like you've come to the very end of the list!</h4>
+          <p>To keep going, check the <i>"Allow Duplicates"</i> checkbox under the options menu, OR click the <i>"Clear History"</i> button above to start over.</p>
+        </div>
+        <div id="warning-element-2" class="warning-element centre">
+          <h4>Looks like you've come to the end of this selection!</h4>
+          <p>To keep going, check one of the <i>"Superhero Choices"</i> under the options menu, OR click the <i>"Clear History"</i> button above to start over.</p>
+        </div>
+      </div>
+    </div>
+    <div class="vertical-container w-Third">
+      <div class="pad centre">
+        <div class="h-15-30 w-100">
+          <h3>Your superhero is ...</h3>
+          <h2 id="superhero"></h2>
+          <p id="subtext"></p>
+        </div>
+        <div class="h-15-60 w-100">
+          <h3>Their superpower is ...</h3>
+          <h2 id="superpower"></h2>
+        </div>
+      </div>
+    </div>
+    <div class="vertical-container w-Third container">
+      <div class="pad container">
+        <h3 class="centre">Your Superhero Roster</h3>
+        <ul class="content roster" id="roster">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a>Check out the source code on Github!</a>
+  </div>
+</div>
+<script>
+
+  let AppVersion = "0.2.3";
+
+  let People;
+  let Superpowers;
+
+  function choose(_array) {
+    return _array[Math.floor(Math.random() * _array.length)];
+  }
+
+  function choose_number(_array) {
+    return Math.floor(Math.random() * _array.length);
+  }
+
+  // SEARCH FUNCTION
+  // Arguments work like this:
+  // _arguments = [[field: "name", term: "Jane Doe", (optional)modifier: "exclude"],
+  //               ["subtext", "No one knows who she is"], ... ]
+  //
+  // Searches _array to make sure that all of the criteria given in _search is valid
+  // The field argument points the search engine towards any json node that has the same value. All text is
+  //  sanitised and converted to lowercase, so capitalization won't be a problem.
+  // The term argument is what the json node's value is matched against.
+  // If the optional modifier argument is set to "exclude", than any results that match the term will get flagged
+  //  down as false, and won't be added to the list of elements that are returned.
+  function search(_array, _arguments="") {
+    if (_arguments === "") {
+      return _array
+    }
+
+    let search_results = [];
+
+    for (const array_element of _array) {
+      let can_add_entry = true;
+      for (const search_entry of _arguments) {
+        let search_field = search_entry[0].toLowerCase();
+        let search_term = search_entry[1].toLowerCase();
+        let search_modifier = "";
+
+        if (search_entry.length >= 3) {
+          // Judging by the number of search arguments given to us, 3 (or more), the optional modifier
+          // was filled in
+          search_modifier = search_entry[2].toLowerCase();
+        } else {
+          // The optional modifier was left blank, so we will treat it like it is set to "include".
+          search_modifier = "include";
+        }
+
+        switch (search_modifier) {
+          case "exclude":
+            if (array_element[search_field].toLowerCase() == search_term) {
+              // Since we are using the "exclude" modifier, and the term matched the field we were
+              // searching, we want to exclude this result from our tempArray. We can flag it as
+              // false.
+              can_add_entry = false;
+            }
+            break;
+          case "include":
+            if (array_element[search_field].toLowerCase() != search_term) {
+              can_add_entry = false;
+            }
+            break;
+        }
+      }
+
+      if (can_add_entry === true) {
+        search_results.push(array_element);
+      }
+    }
+
+    return search_results;
+  }
+
+  function idGet(obj) {
+    return document.getElementById(obj);
+  }
+
+  function classGet(obj) {
+    return document.getElementsByClassName(obj)[0];
+  }
+
+  function getDataFromFile(_path, _type="json") {
+    let request = new XMLHttpRequest();
+    request.open('GET', _path);
+    request.responseType = _type;
+    request.send();
+    return request;
+  }
+
+  function __init__() {
+    let request_people = getDataFromFile("Data/People.json");
+    request_people.onload = function () {
+      People = request_people.response;
+      for (let people_id = 0; people_id < People.length; people_id++) {
+        People[people_id]["id"] = people_id;
+      }
+    };
+
+    let request_superpowers = getDataFromFile("Data/Superpowers.json");
+    request_superpowers.onload = function () {
+      Superpowers = request_superpowers.response;
+      for (let superpower_id = 0; superpower_id < Superpowers.length; superpower_id++) {
+        Superpowers[superpower_id]["id"] = superpower_id;
+      }
+    };
+
+    idGet("version").innerHTML = "Version " + AppVersion;
+
+    idGet("warning-element-1").hidden = true;
+    idGet("warning-element-2").hidden = true;
+  }
+
+  function checkbox_duplicates() {
+    if (idGet("options-allow-duplicates").checked) {
+      __init__();
+    }
+  }
+
+  function generate() {
+    if (People.length < 1 || Superpowers.length < 1) {
+
+      idGet("warning-element-1").hidden = false;
+      return;
+    } else {
+      idGet("warning-element-1").hidden = true;
+    }
+
+    let temp_people = [];
+
+    if (idGet("choices-individuals").checked) {
+      temp_people = temp_people.concat(search(People, [["type","single","include"]]));
+    }
+
+    if (idGet("choices-groups").checked) {
+      temp_people = temp_people.concat(search(People, [["type","group","include"]]));
+    }
+
+    if (idGet("choices-entities").checked) {
+      temp_people = temp_people.concat(search(People, [["type","entity","include"]]));
+    }
+
+    let temp_superpowers = search(Superpowers);
+
+    if (temp_people.length < 1 || temp_superpowers.length < 1) {
+      idGet("warning-element-2").hidden = false;
+      return;
+    } else {
+      idGet("warning-element-2").hidden = true;
+    }
+
+    let temp_people_id = choose_number(temp_people);
+    let temp_superpowers_id = choose_number(temp_superpowers);
+    let chosen_person = temp_people[temp_people_id];
+    let chosen_superpower = temp_superpowers[temp_superpowers_id];
+
+    if (!idGet("options-allow-duplicates").checked) {
+      let people_id = People.findIndex(element => element["id"] === chosen_person["id"]);
+      let superpower_id = Superpowers.findIndex(element => element["id"] === chosen_superpower["id"]);
+
+      People.splice(people_id, 1);
+      Superpowers.splice(superpower_id, 1);
+    }
+
+    idGet("superhero").innerText = chosen_person["name"];
+    idGet("superpower").innerText = chosen_superpower["info"];
+
+    if (chosen_person["subtext"] != null) {
+      idGet("subtext").innerHTML = chosen_person["subtext"];
+    } else {
+      idGet("subtext").innerHTML = "";
+    }
+
+    idGet("roster").innerHTML += "<li>"+chosen_person["name"]+": "+chosen_superpower["info"]+"</li>"
+  }
+
+  function reset() {
+    console.log("Clear pressed");
+    idGet("superhero").innerHTML = "";
+    idGet("subtext").innerHTML = "";
+    idGet("superpower").innerHTML = "";
+    idGet("roster").innerHTML = "";
+    __init__();
+  }
+
+  __init__();
+
+  $(document).ready(function(){
+    $("#collapse-input").on("click", function(){
+      $(".collapse-content").toggle();
+    });
+  });
+
+</script>
+</body>
+</html>

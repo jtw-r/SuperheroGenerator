@@ -1,0 +1,638 @@
+[
+  {
+    "name":"Jonathan Reiterman",
+    "type":"Single"
+  },
+  {
+    "name":"500 crying horses",
+    "type":"Multiple"
+  },
+  {
+    "name":"Spongebob",
+    "type":"Single"
+  },
+  {
+    "name":"The prime minister of Canada",
+    "type":"Single"
+  },
+  {
+    "name":"A bus full of middle schoolers",
+    "type":"Multiple"
+  },
+  {
+    "name":"Everyone in the United States Congress",
+    "type":"Multiple"
+  },
+  {
+    "name":"Everyone in the United States House of Representatives",
+    "type":"Multiple"
+  },
+  {
+    "name":"Tom Hanks",
+    "type":"Single"
+  },
+  {
+    "name":"Julia Roberts",
+    "type":"Single"
+  },
+  {
+    "name":"pAnt Man",
+    "subtext": "Ant Man's estranged cousin who can change into a pair of pants on command",
+    "type":""
+  },
+  {
+    "name":"Gasoline Woman",
+    "type":"Single"
+  },
+  {
+    "name":"A biker gang",
+    "type":"Multiple"
+  },
+  {
+    "name":"A geologist",
+    "type":"Single"
+  },
+  {
+    "name":"The Mona Lisa",
+    "type":"Single"
+  },
+  {
+    "name":"Billy Porter (Met Gala 2019)",
+    "subtext": "Servants not included",
+    "type":"Single"
+  },
+  {
+    "name":"Everyone running the @costarastrology instagram account",
+    "type":"Multiple"
+  },
+  {
+    "name":"Mark Zuckerberg",
+    "type":"Single"
+  },
+  {
+    "name":"Mark Zuckerberg's wife",
+    "type":"Single"
+  },
+  {
+    "name":"Pharaoh",
+    "type":"Single"
+  },
+  {
+    "name":"Napoleon Bonaparte and his entire army",
+    "type":"Multiple"
+  },
+  {
+    "name":"Alexander Graham Bell",
+    "type":"Single"
+  },
+  {
+    "name":"Socrates",
+    "type":"Single"
+  },
+  {
+    "name":"The Trojan horse from The Trojan War",
+    "type":"Single"
+  },
+  {
+    "name":"Marilyn Monroe",
+    "type":"Single"
+  },
+  {
+    "name":"Abraham Lincoln",
+    "type":"Single"
+  },
+  {
+    "name":"Nelson Mandela",
+    "type":"Single"
+  },
+  {
+    "name":"John F. Kennedy",
+    "type":"Single"
+  },
+  {
+    "name":"John E. Kennedy",
+    "subtext": "Next in line if America was still a monarchy",
+    "type":"Single"
+  },
+  {
+    "name":"Martin Luther King Jr",
+    "type":"Single"
+  },
+  {
+    "name":"Queen Elizabeth II",
+    "type":"Single"
+  },
+  {
+    "name":"Winston Churchill",
+    "type":"Single"
+  },
+  {
+    "name":"Donald Trump",
+    "type":"Single"
+  },
+  {
+    "name":"Donald Drumpf",
+    "subtext": "Absolutely NO relation to Donald Trump",
+    "type":"Single"
+  },
+  {
+    "name":"Bill Gates",
+    "type":"Single"
+  },
+  {
+    "name":"Muhammad Ali",
+    "type":"Single"
+  },
+  {
+    "name":"Mahatma Gandhi",
+    "type":"Single"
+  },
+  {
+    "name":"Mother Teresa",
+    "type":"Single"
+  },
+  {
+    "name":"Father Teresa",
+    "type":"Single"
+  },
+  {
+    "name":"Christopher Columbus",
+    "type":"Single"
+  },
+  {
+    "name":"Charles Darwin",
+    "type":"Single"
+  },
+  {
+    "name":"Elvis Presley",
+    "type":"Single"
+  },
+  {
+    "name":"Albert Einstein",
+    "type":"Single"
+  },
+  {
+    "name":"Paul McCartney",
+    "type":"Single"
+  },
+  {
+    "name":"Queen Victoria",
+    "type":"Single"
+  },
+  {
+    "name":"Pope Francis",
+    "type":"Single"
+  },
+  {
+    "name":"Jawaharlal Nehru",
+    "type":"Single"
+  },
+  {
+    "name":"Leonardo da Vinci",
+    "type":"Single"
+  },
+  {
+    "name":"Vincent Van Gogh",
+    "type":"Single"
+  },
+  {
+    "name":"Franklin D. Roosevelt",
+    "subtext": "The D stands for Dopamine",
+    "type":"Single"
+  },
+  {
+    "name":"Pope John Paul II",
+    "type":"Single"
+  },
+  {
+    "name":"Thomas Edison",
+    "type":"Single"
+  },
+  {
+    "name":"Rosa Parks",
+    "type":"Single"
+  },
+  {
+    "name":"Lyndon Johnson",
+    "type":"Single"
+  },
+  {
+    "name":"Ludwig Beethoven",
+    "type":"Single"
+  },
+  {
+    "name":"Oprah Winfrey",
+    "type":"Single"
+  },
+  {
+    "name":"Indira Gandhi",
+    "type":"Single"
+  },
+  {
+    "name":"Eva Peron",
+    "type":"Single"
+  },
+  {
+    "name":"Benazir Bhutto",
+    "type":"Single"
+  },
+  {
+    "name":"George Orwell",
+    "type":"Single"
+  },
+  {
+    "name":"Desmond Tutu",
+    "type":"Single"
+  },
+  {
+    "name":"Dalai Lama",
+    "type":"Single"
+  },
+  {
+    "name":"Walt Disney",
+    "type":"Single"
+  },
+  {
+    "name":"Mickey Mouse",
+    "type":"Single"
+  },
+  {
+    "name":"Minnie Mouse",
+    "type":"Single"
+  },
+  {
+    "name":"Donald Duck",
+    "type":"Single"
+  },
+  {
+    "name":"Neil Armstrong",
+    "type":"Single"
+  },
+  {
+    "name":"Peter Sellers",
+    "type":"Single"
+  },
+  {
+    "name":"Barack Obama",
+    "type":"Single"
+  },
+  {
+    "name":"Malcom X",
+    "type":"Single"
+  },
+  {
+    "name":"J.K. Rowling",
+    "type":"Single"
+  },
+  {
+    "name":"J.K. Rowling's tweets",
+    "type":"Single"
+  },
+  {
+    "name":"Richard Branson",
+    "type":"Single"
+  },
+  {
+    "name":"Pele",
+    "type":"Single"
+  },
+  {
+    "name":"Angelina Jolie",
+    "type":"Single"
+  },
+  {
+    "name":"Jesse Owens",
+    "type":"Single"
+  },
+  {
+    "name":"John Lennon",
+    "type":"Single"
+  },
+  {
+    "name":"Henry Ford",
+    "type":"Single"
+  },
+  {
+    "name":"Haile Selassie",
+    "type":"Single"
+  },
+  {
+    "name":"Joseph Stalin",
+    "type":"Single"
+  },
+  {
+    "name":"Lord Baden Powell",
+    "type":"Single"
+  },
+  {
+    "name":"Michael Jordon",
+    "type":"Single"
+  },
+  {
+    "name":"George Bush Jr",
+    "type":"Single"
+  },
+  {
+    "name":"Vladimir Lenin",
+    "type":"Single"
+  },
+  {
+    "name":"Vladimir Putin",
+    "type":"Single"
+  },
+  {
+    "name":"Ingrid Bergman",
+    "type":"Single"
+  },
+  {
+    "name":"Fidel Castro",
+    "type":"Single"
+  },
+  {
+    "name":"Leo Tolstoy",
+    "type":"Single"
+  },
+  {
+    "name":"Greta Thunberg",
+    "type":"Single"
+  },
+  {
+    "name":"Pablo Picasso",
+    "type":"Single"
+  },
+  {
+    "name":"Pablo Picasso, but all you can see is his paintbrush",
+    "type":"Single"
+  },
+  {
+    "name":"Oscar Wilde",
+    "type":"Single"
+  },
+  {
+    "name":"Coco Chanel",
+    "type":"Single"
+  },
+  {
+    "name":"Charles de Gaulle",
+    "type":"Single"
+  },
+  {
+    "name":"Amelia Earhart",
+    "type":"Single"
+  },
+  {
+    "name":"Amelia Earhard",
+    "subtext": "Her... Sister!",
+    "type":"Single"
+  },
+  {
+    "name":"john M Keynes",
+    "type":"Single"
+  },
+  {
+    "name":"Louis Pasteur",
+    "type":"Single"
+  },
+  {
+    "name":"Mikhail Gorbachev",
+    "type":"Single"
+  },
+  {
+    "name":"Plato",
+    "type":"Single"
+  },
+  {
+    "name":"Sting",
+    "type":"Single"
+  },
+  {
+    "name":"Mary Magdalene",
+    "type":"Single"
+  },
+  {
+    "name":"Michael Jackson",
+    "type":"Single"
+  },
+  {
+    "name":"Madonna",
+    "type":"Single"
+  },
+  {
+    "name":"That annoying drilling sound in Madonna's \"Bitch I'm Madonna\"",
+    "type":"Single"
+  },
+  {
+    "name":"The ghost of Mata Hari",
+    "type":"Single"
+  },
+  {
+    "name":"Mata Hari",
+    "type":"Single"
+  },
+  {
+    "name":"Cleopatra",
+    "type":"Single"
+  },
+  {
+    "name":"Grace Kelly",
+    "type":"Single"
+  },
+  {
+    "name":"Malala Yousafzai",
+    "type":"Single"
+  },
+  {
+    "name":"Steve Jobs",
+    "type":"Single"
+  },
+  {
+    "name":"Ronald Regan",
+    "type":"Single"
+  },
+  {
+    "name":"Lionel Messi",
+    "type":"Single"
+  },
+  {
+    "name":"Babe Ruth",
+    "type":"Single"
+  },
+  {
+    "name":"Bob Geldof",
+    "type":"Single"
+  },
+  {
+    "name":"Roger Federer",
+    "type":"Single"
+  },
+  {
+    "name":"Sigmund Freud",
+    "type":"Single"
+  },
+  {
+    "name":"Woodrow Wilson",
+    "type":"Single"
+  },
+  {
+    "name":"Katherine Hepburn",
+    "type":"Single"
+  },
+  {
+    "name":"Aubrey Hepburn",
+    "type":"Single"
+  },
+  {
+    "name":"Stacey Hepburn",
+    "subtext": "Aubrey & Katherine's estranged sister",
+    "type":"Single"
+  },
+  {
+    "name":"David Beckham",
+    "type":"Single"
+  },
+  {
+    "name":"Tiger Woods",
+    "type":"Single"
+  },
+  {
+    "name":"Usain Bolt",
+    "type":"Single"
+  },
+  {
+    "name":"Carl Lewis",
+    "type":"Single"
+  },
+  {
+    "name":"Prince Charles",
+    "type":"Single"
+  },
+  {
+    "name":"Princess Diana",
+    "type":"Single"
+  },
+  {
+    "name":"Jacqueline Kennedy Onassis",
+    "type":"Single"
+  },
+  {
+    "name":"C.S. Lewis",
+    "type":"Single"
+  },
+  {
+    "name":"Billie Holiday",
+    "type":"Single"
+  },
+  {
+    "name":"J.R.R Tolkien",
+    "type":"Single"
+  },
+  {
+    "name":"Billie Jean King",
+    "type":"Single"
+  },
+  {
+    "name":"Margret Thatcher",
+    "type":"Single"
+  },
+  {
+    "name":"Anne Frank",
+    "type":"Single"
+  },
+  {
+    "name":"Tom Cruise",
+    "type":"Single"
+  },
+  {
+    "name":"Brad Pitt",
+    "type":"Single"
+  },
+  {
+    "name":"Matt Damon in The Informant",
+    "type":"Single"
+  },
+  {
+    "name":"Marie Curie",
+    "type":"Single"
+  },
+  {
+    "name":"Shakira",
+    "type":"Single"
+  },
+  {
+    "name":"Julie Andrews",
+    "type":"Single"
+  },
+  {
+    "name":"Augustus Caesar",
+    "type":"Single"
+  },
+  {
+    "name":"Julius Caesar",
+    "type":"Single"
+  },
+  {
+    "name":"Everyone who assassinated Julius Caesar",
+    "type":"Group"
+  },
+  {
+    "name":"Bob Marley",
+    "type":"Single"
+  },
+  {
+    "name":"Ashton Kutcher",
+    "type":"Single"
+  },
+  {
+    "name":"Everyone Nicki Minaj has EVER been in a room with",
+    "type":"Group"
+  },
+  {
+    "name":"Doja Cat",
+    "type":"Single"
+  },
+  {
+    "name":"Brittany Broski",
+    "type":"Single"
+  },
+  {
+    "name":"My sleep paralysis demon",
+    "type":"Single"
+  },
+  {
+    "name":"Liability by Lorde being played in a shopping mall",
+    "type":"Entity"
+  },
+  {
+    "name":"Val Kilmer without any legs",
+    "type":"Single"
+  },
+  {
+    "name":"That girl who once got asked by the teacher to take attendance, and all the power went straight to her head",
+    "type":"Single"
+  },
+  {
+    "name":"The snack that smiles back!",
+    "subtext": "Except today, they actually are frowning",
+    "type":"Group"
+  },
+  {
+    "name":"Jason Derulo, riding an armadillo",
+    "type":"Single"
+  },
+  {
+    "name":"A pig that won't stop screaming",
+    "type":"Single"
+  },
+  {
+    "name":"Coldplay, before ... the incident",
+    "type":"Group"
+  },
+  {
+    "name":"",
+    "type":""
+  },
+  {
+    "name":"",
+    "type":""
+  }
+]
