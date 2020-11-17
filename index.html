@@ -84,10 +84,6 @@
   let People;
   let Superpowers;
 
-  function choose(_array) {
-    return _array[Math.floor(Math.random() * _array.length)];
-  }
-
   function choose_number(_array) {
     return Math.floor(Math.random() * _array.length);
   }
@@ -198,7 +194,6 @@
 
   function generate() {
     if (People.length < 1 || Superpowers.length < 1) {
-
       idGet("warning-element-1").hidden = false;
       return;
     } else {
@@ -264,7 +259,7 @@
 
   __init__();
 
-  $(document).ready(function(){
+  $(function(){
     $("#collapse-input").on("click", function(){
       $(".collapse-content").toggle();
     });
