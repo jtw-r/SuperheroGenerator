@@ -628,11 +628,27 @@
     "type":"Group"
   },
   {
-    "name":"",
-    "type":""
+    "name":"Slayyyter",
+    "type":"Single"
   },
   {
-    "name":"",
-    "type":""
+    "name":"Björk",
+    "type":"Single"
+  },
+  {
+    "name":"Lana Del Rey",
+    "type":"Single"
+  },
+  {
+    "name":"Fleetwood Mac",
+    "type":"Group"
+  },
+  {
+    "name":"Prince",
+    "type":"Single"
+  },
+  {
+    "name":"Lady Gaga",
+    "type":"Single"
   }
 ]
