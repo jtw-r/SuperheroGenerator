@@ -9,14 +9,11 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-flow: column;
   height: 100%;
 }
 
-.container .header {
-  flex: 0 1 auto;
-  border-bottom: 1px solid #e6e6e6;
+.header, .footer {
+  margin: 0;
   padding: 2px;
 }
 
@@ -24,26 +21,13 @@ body {
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: auto;
-  overflow-y: auto;
-}
-
-.container .footer {
-  flex: 0 1 auto;
-  border-top: 1px solid #e6e6e6;
-  padding: 2px;
 }
 
 .vertical-container {
   float: left;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
   border-right: 1px solid #e6e6e6;
-}
-
-.header *,
-.footer * {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .pad {
@@ -81,7 +65,8 @@ h3 {
 .roster {
   margin: 0;
   padding: 10px 5px 10px 30px;
-  overflow: scroll;
+  overflow-x: unset;
+  overflow-y: auto;
 }
 
 .roster li {
