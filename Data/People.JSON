@@ -654,5 +654,213 @@
   {
     "name":"Austin Hicks",
     "type":"Single"
+  },
+  {
+    "name":"Beyonce",
+    "type":"Single"
+  },
+  {
+    "name":"Aretha Franklin",
+    "type":"Single"
+  },
+  {
+    "name":"Mariah Carey",
+    "type":"Single"
+  },
+  {
+    "name":"Frank Sinatra",
+    "type":"Single"
+  },
+  {
+    "name":"Whitney Houston",
+    "type":"Single"
+  },
+  {
+    "name":"Taylor Swift",
+    "type":"Single"
+  },
+  {
+    "name":"Marvin Gaye",
+    "type":"Single"
+  },
+  {
+    "name":"Stevie Wonder",
+    "type":"Single"
+  },
+  {
+    "name":"Rihanna",
+    "type":"Single"
+  },
+  {
+    "name":"Adele",
+    "type":"Single"
+  },
+  {
+    "name":"Tina Turner",
+    "type":"Single"
+  },
+  {
+    "name":"Elton John",
+    "type":"Single"
+  },
+  {
+    "name":"Mary J. Blige",
+    "type":"Single"
+  },
+  {
+    "name":"Iggy Pop",
+    "type":"Single"
+  },
+  {
+    "name":"Dolly Parton",
+    "type":"Single"
+  },
+  {
+    "name":"Chuck Berry",
+    "type":"Single"
+  },
+  {
+    "name":"Nina Simone",
+    "type":"Single"
+  },
+  {
+    "name":"Janis Joplin",
+    "type":"Single"
+  },
+  {
+    "name":"Grimes",
+    "type":"Single"
+  },
+  {
+    "name":"David Bowie",
+    "type":"Single"
+  },
+  {
+    "name":"The Olsen Twins",
+    "type":"Multiple"
+  },
+  {
+    "name":"Mick Jagger",
+    "type":"Single"
+  },
+  {
+    "name":"Charli XCX",
+    "type":"Single"
+  },
+  {
+    "name":"Kim Petras",
+    "type":"Single"
+  },
+  {
+    "name":"Kesha",
+    "type":"Single"
+  },
+  {
+    "name":"Kim Kardashian",
+    "type":"Single"
+  },
+  {
+    "name":"Ariana Grande",
+    "type":"Single"
+  },
+  {
+    "name":"Megan Thee Stallion",
+    "type":"Single"
+  },
+  {
+    "name":"Tame Impala",
+    "type":"Single"
+  },
+  {
+    "name":"Backstreet Boys",
+    "type":"Multiple"
+  },
+  {
+    "name":"One Direction",
+    "type":"Multiple"
+  },
+  {
+    "name":"Sacha Baron Cohen",
+    "type":"Single"
+  },
+  {
+    "name":"Carla Gugino",
+    "type":"Single"
+  },
+  {
+    "name":"Dan Levy",
+    "type":"Single"
+  },
+  {
+    "name":"Eugene Levy",
+    "type":"Single"
+  },
+  {
+    "name":"Adam Sandler",
+    "type":"Single"
+  },
+  {
+    "name":"matthew McConaughey",
+    "type":"Single"
+  },
+  {
+    "name":"Scarlett Johansson",
+    "type":"Single"
+  },
+  {
+    "name":"Bella Thorne",
+    "type":"Single"
+  },
+  {
+    "name":"Alexandra Daddario",
+    "type":"Single"
+  },
+  {
+    "name":"Sarah Paulson",
+    "type":"Single"
+  },
+  {
+    "name":"Issa Rae",
+    "type":"Single"
+  },
+  {
+    "name":"Tom Hardy",
+    "type":"Single"
+  },
+  {
+    "name":"Tim Burton",
+    "type":"Single"
+  },
+  {
+    "name":"Jennifer Lawrence",
+    "type":"Single"
+  },
+  {
+    "name":"The 1975",
+    "type":"Multiple"
+  },
+  {
+    "name":"Zac Efron",
+    "type":"Single"
+  },
+  {
+    "name":"Winona Ryder",
+    "type":"Single"
+  },
+  {
+    "name":"Clint Eastwood",
+    "type":"Single"
+  },
+  {
+    "name":"Jeff Goldblum",
+    "type":"Single"
+  },
+  {
+    "name":"Helena Bonham Carter",
+    "type":"Single"
+  },
+  {
+    "name":"Kristen Stewart",
+    "type":"Single"
   }
 ]
